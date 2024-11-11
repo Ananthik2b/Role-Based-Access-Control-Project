@@ -1,0 +1,58 @@
+/* src/components/Topbar/Topbar.css */
+
+.topbar {
+    height: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+
+.hamburger {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.logout-button {
+    margin-right: 70px;
+    width: 100px;
+    background-color: yellowgreen;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #5f9c3b;
+}
+
+.logout-button:focus {
+    outline: none;
+}
+
+/* Responsive adjustments for Topbar */
+@media (max-width: 768px) {
+    .topbar {
+        padding: 0 10px;
+    }
+
+    .hamburger {
+        font-size: 30px; /* Larger hamburger icon on smaller screens */
+    }
+
+    .logout-button {
+        width: 90px; /* Adjust logout button size */
+    }
+}
